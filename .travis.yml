@@ -1,0 +1,9 @@
+language: bash
+
+script:
+  - wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+  - export file="google-chrome-stable_current_amd64.deb"
+  - export bucket="$BUCKET"
+  - export accesskey="$ACCESS_KEY"
+  - export secretkey="$SECRET_KEY"
+  - sh upload.sh
